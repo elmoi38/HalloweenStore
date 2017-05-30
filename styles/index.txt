@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JQuery</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="styles/finalreview.css">
+ <script type="text/javascript">
+ $(function() {
+	$("#sulu").click(function() {
+		$("#showSulu").show(function() {
+    
+		});
+	});
+
+	$("#uhura").click(function() {
+		$("#showUhura").show(function() {
+    
+		});
+	});
+	
+	$("#scotty").click(function() {
+		$("#showScotty").show(function() {
+    
+		});
+	});
+	
+	$("#description").click(function() {
+		$("#makeDescriptionAppear").show(function() {
+    
+		});
+	});
+	
+	$("#enlarge").click(function() {
+		$("#magnifyText").show(function(){ 
+		$("makeDescriptionAppear").hide(function(){
+		});
+		});
+	});
+})
+ 
+</script>
+
+</head>
+<body>
+	<aside>
+	  <nav>
+	    <ul>
+			<li><button id="sulu">Sulu</button></li>
+			<li><button id="uhura">Uhura</button></li>
+			<li><button id="scotty">Scotty</button></li>
+			<li><button id="description">Description</button></li>
+			<li><button id="enlarge">Enlarge Text</button></li>
+	    </ul>	
+	  </nav>
+	</aside>
+
+	<div id="showSulu">
+		<img src= "images/sulu.jpg" height="100" width="100">
+	</div>
+
+
+	<div id="showUhura">
+		<img src= "images/uhura.jpg" height="100" width="100">
+	</div>
+	
+	<div id="showScotty">
+		<img src= "images/scotty.jpg" height="100" width="100">
+	</div>
+
+ 	<div class="p_div" id="makeDescriptionAppear">
+		
+		<p>
+		Star Trek is an American science fiction entertainment franchise created by Gene
+		Roddenberry and owned by CBS and Paramount Pictures. Star Trek: The Original Series and  
+		its live-action TV spin-off series, Star Trek: The Next Generation, Star Trek: Deep Space Nine,  
+		Star Trek: Voyager, and Star Trek: Enterprise as well as the Star Trek film franchise make up the  
+		main canon. The canonicity of Star Trek: The Animated Series is debated, and the expansive library of 
+		Star Trek novels and comics is generally considered non-canon, although still part of the franchise. 
+		</p>
+		
+	</div>
+	
+	 <div class="enlarge_p" id="magnifyText">
+		
+		<p>
+		Star Trek is an American science fiction entertainment franchise created by Gene
+		Roddenberry and owned by CBS and Paramount Pictures. Star Trek: The Original Series and  
+		its live-action TV spin-off series, Star Trek: The Next Generation, Star Trek: Deep Space Nine,  
+		Star Trek: Voyager, and Star Trek: Enterprise as well as the Star Trek film franchise make up the  
+		main canon. The canonicity of Star Trek: The Animated Series is debated, and the expansive library of 
+		Star Trek novels and comics is generally considered non-canon, although still part of the franchise. 
+		</p>
+		
+	</div>
+	
+ 
+</body>
+</html>
